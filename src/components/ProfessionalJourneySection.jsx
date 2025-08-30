@@ -9,7 +9,7 @@ const journeySteps = [
     title: "Senior Blockchain Architect",
     company: "Independent Consultant",
     location: "Global Remote",
-    icon: <TrendingUp className="w-6 h-6" />,
+    
     description: "Leading blockchain strategy and development for multiple Web3 startups, focusing on DeFi protocols and community-driven ecosystems.",
     achievements: [
       "Architected 5+ DeFi protocols with $12M+ TVL",
@@ -24,7 +24,7 @@ const journeySteps = [
     title: "Web3 Growth Strategist",
     company: "Multiple Startups",
     location: "Africa & Global",
-    icon: <Users className="w-6 h-6" />,
+   
     description: "Specialized in scaling Web3 projects from MVP to market fit, with focus on sustainable growth and community engagement.",
     achievements: [
       "Scaled 3 projects to 100K+ users",
@@ -39,7 +39,7 @@ const journeySteps = [
     title: "Blockchain Developer & Educator",
     company: "Ambrose Trading Academy",
     location: "Nigeria",
-    icon: <Award className="w-6 h-6" />,
+    
     description: "Founded educational platform teaching blockchain development and trading, while building smart contracts for various clients.",
     achievements: [
       "Trained 200+ students in blockchain",
@@ -54,7 +54,7 @@ const journeySteps = [
     title: "Crypto Trader & Analyst",
     company: "Independent",
     location: "Global Markets",
-    icon: <TrendingUp className="w-6 h-6" />,
+   
     description: "Full-time cryptocurrency trading and market analysis, developing strategies for both personal portfolio and client funds.",
     achievements: [
       "Achieved 300%+ portfolio returns",
@@ -69,7 +69,7 @@ const journeySteps = [
     title: "Forex Trader",
     company: "Independent",
     location: "Traditional Markets",
-    icon: <Calendar className="w-6 h-6" />,
+  
     description: "Started trading journey in traditional forex markets, building foundation in financial markets and risk management.",
     achievements: [
       "Developed systematic trading approach",
