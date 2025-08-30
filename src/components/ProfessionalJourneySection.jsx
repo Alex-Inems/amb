@@ -16,8 +16,7 @@ const journeySteps = [
       "Launched successful token projects"
     ],
     skills: ["Solidity", "Rust", "DeFi", "Tokenomics", "Community Building"],
-    color: "from-red-600 to-orange-600",
-    image: "https://www.ambrose.live/blockchain-architect.jpg"
+    color: "from-red-600 to-orange-600"
   },
   {
     year: "2023 - 2024",
@@ -31,8 +30,7 @@ const journeySteps = [
       "Built strategic partnerships globally"
     ],
     skills: ["Growth Strategy", "Partnerships", "Token Design", "Marketing"],
-    color: "from-orange-600 to-red-600",
-    image: "https://www.ambrose.live/growth-strategist.jpg"
+    color: "from-orange-600 to-red-600"
   },
   {
     year: "2022 - 2023",
@@ -46,8 +44,7 @@ const journeySteps = [
       "Created comprehensive Web3 curriculum"
     ],
     skills: ["Smart Contracts", "Teaching", "Curriculum Design", "Mentoring"],
-    color: "from-red-700 to-orange-700",
-    image: "https://www.ambrose.live/blockchain-educator.jpg"
+    color: "from-red-700 to-orange-700"
   },
   {
     year: "2021 - 2022",
@@ -61,8 +58,7 @@ const journeySteps = [
       "Created market analysis frameworks"
     ],
     skills: ["Technical Analysis", "Trading Systems", "Risk Management", "DeFi"],
-    color: "from-orange-700 to-red-700",
-    image: "https://www.ambrose.live/crypto-trader.jpg"
+    color: "from-orange-700 to-red-700"
   },
   {
     year: "2020 - 2021", 
@@ -76,8 +72,7 @@ const journeySteps = [
       "Transitioned to crypto successfully"
     ],
     skills: ["Forex Trading", "Risk Management", "Market Analysis", "Psychology"],
-    color: "from-red-800 to-orange-800",
-    image: "https://www.ambrose.live/forex-trader.jpg"
+    color: "from-red-800 to-orange-800"
   }
 ];
 
@@ -115,40 +110,12 @@ export default function ProfessionalJourneySection() {
             {journeySteps.map((step, index) => (
               <div 
                 key={index}
-                className={`relative flex items-start ${
-                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                } animate-fade-in group`}
+                className={`relative flex items-start ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} animate-fade-in group`}
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
-                {/* Timeline Node */}
-                {/* <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 -translate-y-2 z-20">
-                  <div className="relative">
-                    <div className="w-16 h-16 bg-gradient-to-r bg-primary rounded-full border-4 border-background shadow-2xl flex items-center justify-center text-primary-foreground">
-                      {step.icon}
-                    </div>
-                    <div className="absolute inset-0 bg-gradient-to-r bg-primary rounded-full animate-pulse-glow opacity-50"></div>
-                  </div>
-                </div> */}
-
                 {/* Content Card */}
-                <div className={`ml-24 md:ml-0 ${
-                  index % 2 === 0 
-                    ? 'md:pr-16 md:text-right' 
-                    : 'md:pl-16 md:text-left'
-                } md:w-1/2 group-hover:scale-105 transition-all duration-500`}>
-                  
+                <div className={`ml-24 md:ml-0 ${index % 2 === 0 ? 'md:pr-16 md:text-right' : 'md:pl-16 md:text-left'} md:w-1/2 group-hover:scale-105 transition-all duration-500`}>
                   <Card className="glass-card p-8 border-l-4 border-primary shadow-elegant hover:shadow-glow transition-all duration-500 relative overflow-hidden">
-                    {/* Image */}
-                    {step.image && (
-                      <div className="mb-6 w-full h-64 relative overflow-hidden rounded-lg">
-                        <img 
-                          src={step.image} 
-                          alt={step.title} 
-                          className="w-full h-full object-cover transition-smooth group-hover:scale-105"
-                        />
-                      </div>
-                    )}
-                    
                     <CardContent className="p-0 relative z-10">
                       {/* Header */}
                       <div className="space-y-3 mb-6">
