@@ -150,7 +150,7 @@ export default function ProofOfWorkSection() {
         </div>
 
         {/* Certifications & Skills */}
-        <div className="text-center space-y-8">
+        {/* <div className="text-center space-y-8">
           <h3 className="text-3xl font-bold text-foreground">Certifications & Expertise</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {certifications.map((cert, index) => (
@@ -164,7 +164,7 @@ export default function ProofOfWorkSection() {
               </Badge>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -4,7 +4,7 @@ import DiagonalGallerySection from "@/components/DiagonalGallerySection";
 import AboutSection from "@/components/AboutSection";
 import ProfessionalJourneySection from "@/components/ProfessionalJourneySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
-import ProjectsSection from "@/components/ProjectsSection";
+
 
 const Index = () => {
   return (
@@ -15,7 +15,7 @@ const Index = () => {
       <AboutSection />
       <ProfessionalJourneySection />
       <TestimonialsSection />
-      <ProjectsSection />
+      
     </div>
   );
 };

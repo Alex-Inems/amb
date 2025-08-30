@@ -139,7 +139,7 @@ export default function ProfessionalJourneySection() {
                   
                   <Card className="glass-card p-8 border-l-4 border-primary shadow-elegant hover:shadow-glow transition-all duration-500 relative overflow-hidden">
                     {/* Card Background Gradient */}
-                    <div className={`absolute inset-0 bg-gradient-to-br ${step.color} opacity-5 group-hover:opacity-10 transition-opacity duration-500`}></div>
+                    
                     
                     <CardContent className="p-0 relative z-10">
                       {/* Header */}
