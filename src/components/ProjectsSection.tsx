@@ -6,127 +6,81 @@ import { ExternalLink, Github, Globe, TrendingUp, Users, DollarSign } from "luci
 
 const projects = [
   {
-    title: "DecentraSwap Protocol",
-    category: "DeFi",
-    description: "A next-generation AMM DEX with advanced features like concentrated liquidity and cross-chain swaps. Built for maximum capital efficiency.",
-    image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["Solidity", "TypeScript", "DeFi", "AMM"],
-    metrics: {
-      tvl: "$5.2M",
-      users: "15K+",
-      volume: "$45M+"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
-    status: "Live",
-    featured: true
-  },
-  {
-    title: "AfriCoin Ecosystem",
-    category: "Token",
-    description: "A comprehensive cryptocurrency ecosystem designed specifically for African markets, featuring staking, governance, and utility functions.",
+    title: "NestWallet",
+    category: "Wallets",
+    description: "Led marketing efforts in Africa, driving user adoption through community events and social media campaigns for a leading Solana wallet.",
     image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["Tokenomics", "Governance", "Staking", "Mobile"],
-    metrics: {
-      tvl: "$2.8M",
-      users: "25K+",
-      volume: "$12M+"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
+    tags: ["Solana", "Wallet", "Marketing", "Community"],
+    metrics: { tvl: "-", users: "-", volume: "-" },
+    links: { live: "#", github: "#", demo: "#" },
     status: "Live",
     featured: true
   },
   {
-    title: "Web3 Learning Platform",
-    category: "Education",
-    description: "Interactive platform for learning blockchain development with hands-on coding exercises, mentorship, and certification programs.",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["React", "Node.js", "Education", "Blockchain"],
-    metrics: {
-      tvl: "200+",
-      users: "3K+",
-      volume: "95%"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
+    title: "Stabble Protocol",
+    category: "DEX",
+    description: "Supported marketing for Stabble, a Solana DEX, enhancing visibility and engagement in the DeFi space.",
+    image: "https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    tags: ["Solana", "DEX", "DeFi", "Marketing"],
+    metrics: { tvl: "-", users: "-", volume: "-" },
+    links: { live: "#", github: "#", demo: "#" },
     status: "Live",
-    featured: false
+    featured: true
   },
   {
-    title: "NFT Marketplace",
-    category: "NFT",
-    description: "Curated NFT marketplace focusing on African digital art and collectibles with low fees and creator-friendly royalties.",
+    title: "Solayer",
+    category: "Tools",
+    description: "Successfully drove significant growth and engagement for Solayer by securing over 440 referrals, increasing daily trading volume by $20k, and creating compelling content highlighting the project's milestones and performance.",
     image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["NFT", "IPFS", "Marketplace", "Art"],
-    metrics: {
-      tvl: "$800K",
-      users: "5K+",
-      volume: "$3.2M+"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
+    tags: ["Solana", "Referrals", "Content", "Trading"],
+    metrics: { tvl: "$20K", users: "440+", volume: "$20K/day" },
+    links: { live: "#", github: "#", demo: "#" },
     status: "Live",
-    featured: false
+    featured: true
   },
   {
-    title: "DeFi Yield Optimizer",
-    category: "DeFi",
-    description: "Automated yield farming protocol that optimizes returns across multiple DeFi platforms while minimizing risks and gas costs.",
+    title: "Superteam NG",
+    category: "Community",
+    description: "Actively contributed to the Superteam NG ecosystem by serving as lead speaker at four local events, participating in bounties/grants as an OG, hosting two bounties on the earn platform, and sustaining a strong connection with the African Lead.",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["Yield Farming", "Automation", "Optimization", "Multi-chain"],
-    metrics: {
-      tvl: "$3.5M",
-      users: "8K+",
-      volume: "18.5%"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
+    tags: ["Community", "Events", "Bounties", "Grants"],
+    metrics: { tvl: "-", users: "-", volume: "-" },
+    links: { live: "#", github: "#", demo: "#" },
     status: "Live",
     featured: false
   },
   {
-    title: "Cross-Chain Bridge",
-    category: "Infrastructure",
-    description: "Secure and efficient bridge for transferring assets between Ethereum, BSC, and Polygon networks with minimal fees.",
+    title: "DeFi Grammy",
+    category: "Tools",
+    description: "DeFi Grammy recognizes spectacular work in the crypto and web3 ecosystem. We have recognized over 8 nominees in the Solana ecosystem and raised $7k in one week through our memecoin for daily activities.",
     image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop&crop=entropy&auto=format",
-    tags: ["Cross-chain", "Bridge", "Security", "Multi-chain"],
-    metrics: {
-      tvl: "$1.2M",
-      users: "6K+",
-      volume: "$8M+"
-    },
-    links: {
-      live: "#",
-      github: "#",
-      demo: "#"
-    },
-    status: "Beta",
+    tags: ["DeFi", "Recognition", "Crypto", "Memecoin"],
+    metrics: { tvl: "$7K", users: "8+", volume: "-" },
+    links: { live: "#", github: "#", demo: "#" },
+    status: "Live",
+    featured: false
+  },
+  {
+    title: "DebarFi",
+    category: "Education",
+    description: "The goal of this project is to educate 1000 persons on how DeFi is transforming the world of portfolio and financial services. Classes hold every week following a structured study of DeFi on Solana.",
+    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    tags: ["Education", "DeFi", "Solana", "Classes"],
+    metrics: { tvl: "1000+", users: "-", volume: "-" },
+    links: { live: "#", github: "#", demo: "#" },
+    status: "Live",
     featured: false
   }
 ];
 
 const getMetricIcon = (category: string) => {
   switch (category) {
-    case "DeFi":
-    case "Token":
+    case "Wallets":
+    case "DEX":
       return <DollarSign className="w-4 h-4" />;
     case "Education":
+      return <Users className="w-4 h-4" />;
+    case "Community":
       return <Users className="w-4 h-4" />;
     default:
       return <TrendingUp className="w-4 h-4" />;
@@ -138,8 +92,11 @@ const getMetricLabel = (category: string, key: string) => {
     const labels = { tvl: "Students", users: "Graduates", volume: "Success Rate" };
     return labels[key as keyof typeof labels] || key;
   }
-  const labels = { tvl: "TVL", users: "Users", volume: "Volume" };
-  return labels[key as keyof typeof labels] || key;
+  if (category === "Wallets" || category === "DEX" || category === "Tools" || category === "Community") {
+    const labels = { tvl: "TVL", users: "Users", volume: "Volume" };
+    return labels[key as keyof typeof labels] || key;
+  }
+  return key;
 };
 
 export default function ProjectsSection() {

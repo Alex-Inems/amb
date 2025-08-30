@@ -4,37 +4,37 @@ import { Card } from "@/components/ui/card";
 const galleryItems = [
   {
     title: "DeFi Innovation",
-    description: "Building next-generation decentralized finance protocols that empower financial inclusion across emerging markets.",
+    description: "Building next-generation.  Pow from an event",
     image: "./public/pow.jpg",
     direction: "left"
   },
   {
     title: "Community Empowerment", 
-    description: "Creating sustainable Web3 communities that drive adoption and education across Africa and beyond.",
+    description: "Smart contract build",
     image: "./public/featured.jpg",
     direction: "right"
   },
   {
     title: "Smart Contract Excellence",
-    description: "Developing secure, efficient, and scalable smart contracts that power the decentralized economy.",
+    description: "I have successfully increased the market caps of multiple coins through strategic Twitter Spaces marketing. This is a testament to my capabilities as a marketer and Growth Lead. I also maintain strong connections with foreign KOLs who trust me enough to join my spaces and invest in the tokens I promote.",
     image: "./public/recommend.jpg",
     direction: "left"
   },
   {
     title: "Ecosystem Building",
-    description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
+    description: "As Growth Lead at Swifi AI, I led the push from 0 to 3,000+ users and scaled our female user base from just 34 to over 350. Real growth, real numbers.",
     image: "./public/stats.jpg",
     direction: "right"
   },
   {
     title: "Ecosystem Building",
-    description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
+    description: "I have been featured on countless Spaces with top foreign KOLs like Ape, Blood, London, Brooks, and more where I’ve been publicly acknowledged and praised for my consistent impact in Web3. These respected voices have encouraged me to keep building, recognizing the value I bring to the space.",
     image: "./public/swift.jpg",
     direction: "left"
   },
   {
     title: "Ecosystem Building",
-    description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
+    description: "These are paid Spaces I hosted under my Startup in Web3 series, where over 100 startups participated to pitch their products and ideas. Each project paid $200+ to secure a speaking slot proof of the demand and value I bring as a host and Web3 growth strategist.",
     image: "./public/featured.jpg",
     direction: "right"
   }

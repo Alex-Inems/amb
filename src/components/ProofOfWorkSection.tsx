@@ -1,81 +1,68 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Coins, TrendingUp, Users, Award } from "lucide-react";
+import { Coins, TrendingUp, Users, Award, Globe, Github, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const projects = [
   {
-    title: "Swifey AI – Growth Engine & App Architect",
-    role: "Growth Strategist | App Developer | Brand Director",
+    title: "Wave – SocialFi Wallet",
+    role: "Continental Lead",
     description:
-      "Architected the Swifey AI app for thousands of African users, spearheaded Swifey Women initiative, and positioned Swifey AI as Africa’s voice in AI innovation for Web3.",
-    metrics: ["Thousands of users", "Swifey Women initiative", "Strategic Partnerships"],
+      "Built a SocialFi wallet on Solana, driving adoption and community engagement across Africa.",
+    metrics: ["Solana-based", "Community-focused", "SocialFi features"],
     icon: <TrendingUp className="w-8 h-8" />,
     color: "text-green-500",
+    links: {
+      live: "https://usewave.app",
+      code: "#",
+      details: "#",
+      preview: {
+        title: "Wave SocialFi Wallet",
+        description: "Solana-based wallet for social finance interactions.",
+        image: "https://via.placeholder.com/150x150.png?text=Wave+Wallet",
+      },
+    },
   },
   {
-    title: "Spectrum – Rise of a Meme Giant",
-    role: "Growth Lead | Ecosystem Strategist",
+    title: "Swifey AI – AI + Web3 Project",
+    role: "Marketing Lead",
     description:
-      "Devised high-impact campaigns, hosted community events, and turned Spectrum into a culture-driven phenomenon.",
-    metrics: ["High-engagement Spaces", "Community-driven coin", "Rapid awareness growth"],
+      "Architected the Swifey AI app and smart contracts, scaling adoption and building strategic partnerships in the Web3 space.",
+    metrics: ["AI + Web3 integration", "Smart contracts", "Community initiatives"],
     icon: <Users className="w-8 h-8" />,
     color: "text-blue-500",
+    links: {
+      live: "https://swifey.ai",
+      code: "#",
+      details: "#",
+      preview: {
+        title: "Swifey AI App",
+        description: "AI-powered platform for African users in Web3.",
+        image: "https://via.placeholder.com/150x150.png?text=Swifey+AI",
+      },
+    },
   },
   {
-    title: "Spungi ($SPUNGI) – Builder of a Movement",
-    role: "Founder | Developer | Growth Engineer",
+    title: "Flip – Gaming & Community Platform",
+    role: "Marketing Lead",
     description:
-      "Deployed secure smart contracts, led branding and narrative, and engineered presale UX/UI to transform $SPUNGI into a Web3 revolution.",
-    metrics: ["Presale success", "Secure contracts", "Community hype"],
-    icon: <Coins className="w-8 h-8" />,
-    color: "text-yellow-500",
-  },
-  {
-    title: "Core DAO – The African Voice of Core",
-    role: "Ecosystem Influencer | Community Ambassador",
-    description:
-      "Educated thousands through tutorials and Spaces, brought mainstream African attention, and became the trusted African voice for Core DAO.",
-    metrics: ["Twitter Spaces education", "Cultural outreach", "Global recognition"],
+      "Promoted Flip.gg, engaging users and growing the platform’s community presence in Africa.",
+    metrics: ["Gaming engagement", "Community growth", "Event hosting"],
     icon: <Award className="w-8 h-8" />,
     color: "text-purple-500",
+    links: {
+      live: "https://flip.gg",
+      code: "#",
+      details: "#",
+      preview: {
+        title: "Flip.gg Platform",
+        description: "Gaming and community engagement platform.",
+        image: "https://via.placeholder.com/150x150.png?text=Flip+GG",
+      },
+    },
   },
-  {
-    title: "Acrypt Signal Group & Ambrose Trading Academy",
-    role: "Founder | Lead Analyst | Educator",
-    description:
-      "Mentored 500+ students, built structured trading academies, and delivered financial literacy beyond signals.",
-    metrics: ["500+ students", "Structured rulebooks", "Consistent market signals"],
-    icon: <TrendingUp className="w-8 h-8" />,
-    color: "text-green-500",
-  },
-  {
-    title: "Ikigai & Ikigai AI – DevOps + Culture Builder",
-    role: "Smart Contract Engineer | Ecosystem Strategist",
-    description:
-      "Deployed smart contracts, advised on token strategy, and balanced tech with community narrative for sustained ecosystem growth.",
-    metrics: ["Smart contract deployment", "Token strategy", "Holder confidence"],
-    icon: <Coins className="w-8 h-8" />,
-    color: "text-yellow-500",
-  },
-  {
-    title: "AquaCoin & AlphaCoin – Community-first Airdrop Campaigns",
-    role: "Lead Hype Strategist | Ambassador | Airdrop Director",
-    description:
-      "Engineered content series, structured ambassador programs, and maintained authentic hype across emerging airdrops.",
-    metrics: ["Daily content series", "Ambassador rewards", "Consistent hype"],
-    icon: <Users className="w-8 h-8" />,
-    color: "text-blue-500",
-  },
-  {
-    title: "Sosofi – The Web3 Influence Economy",
-    role: "Founder | Token Visionary | Influence Market Architect",
-    description:
-      "Designed tokenomics and smart contracts, created a social token economy for influencers and content drivers.",
-    metrics: ["Utility token design", "Smart contract implementation", "Influencer rewards system"],
-    icon: <Award className="w-8 h-8" />,
-    color: "text-purple-500",
-  },
+  // Add your other projects here...
 ];
 
 const certifications = [
@@ -122,7 +109,8 @@ export default function ProofOfWorkSection() {
                     <p className="text-muted-foreground mb-4 leading-relaxed">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-2">
+
+                    <div className="flex flex-wrap gap-2 mb-4">
                       {project.metrics.map((metric, i) => (
                         <Badge
                           key={i}
@@ -133,6 +121,27 @@ export default function ProofOfWorkSection() {
                         </Badge>
                       ))}
                     </div>
+
+                                        
+
+                    {/* Link Preview */}
+                    {project.links.preview && (
+                      <div className="flex border rounded-lg overflow-hidden bg-muted/20 hover:shadow-lg transition-smooth cursor-pointer">
+                        
+                        <div className="p-3 flex-1">
+                          <p className="font-bold text-foreground">{project.links.preview.title}</p>
+                          <p className="text-sm text-muted-foreground">{project.links.preview.description}</p>
+                          <a
+                            href={project.links.live}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-xs text-primary underline mt-1 block"
+                          >
+                            {project.links.live}
+                          </a>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </CardContent>
