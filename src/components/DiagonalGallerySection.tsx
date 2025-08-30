@@ -5,25 +5,37 @@ const galleryItems = [
   {
     title: "DeFi Innovation",
     description: "Building next-generation decentralized finance protocols that empower financial inclusion across emerging markets.",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    image: "./public/pow.jpg",
     direction: "left"
   },
   {
     title: "Community Empowerment", 
     description: "Creating sustainable Web3 communities that drive adoption and education across Africa and beyond.",
-    image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    image: "./public/featured.jpg",
     direction: "right"
   },
   {
     title: "Smart Contract Excellence",
     description: "Developing secure, efficient, and scalable smart contracts that power the decentralized economy.",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    image: "./public/recommend.jpg",
     direction: "left"
   },
   {
     title: "Ecosystem Building",
     description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=entropy&auto=format",
+    image: "./public/stats.jpg",
+    direction: "right"
+  },
+  {
+    title: "Ecosystem Building",
+    description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
+    image: "./public/swift.jpg",
+    direction: "left"
+  },
+  {
+    title: "Ecosystem Building",
+    description: "Architecting comprehensive blockchain ecosystems that foster innovation and sustainable growth.",
+    image: "./public/featured.jpg",
     direction: "right"
   }
 ];

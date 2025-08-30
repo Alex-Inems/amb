@@ -23,7 +23,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-2xl md:text-3xl text-muted-foreground font-medium max-w-4xl mx-auto">
-              Blockchain Builder • Ecosystem Strategist • Community Leader
+            17 | nCMO @PoweredbySYNQ | Dev & Growth Strategist @AxiomExchange | Scaling SYNQ into a $1M+ Web3 Brand
             </p>
             
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">

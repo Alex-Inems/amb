@@ -3,43 +3,87 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Coins, TrendingUp, Users, Award } from "lucide-react";
 
-const achievements = [
+const projects = [
   {
-    icon: <Coins className="w-8 h-8" />,
-    title: "DeFi Protocol Development",
-    description: "Built and deployed multiple DeFi protocols handling over $12M in total value locked",
-    metrics: ["$12M+ TVL", "5 Protocols", "Zero Hacks"],
-    color: "text-yellow-500"
-  },
-  {
+    title: "Swifey AI – Growth Engine & App Architect",
+    role: "Growth Strategist | App Developer | Brand Director",
+    description:
+      "Architected the Swifey AI app for thousands of African users, spearheaded Swifey Women initiative, and positioned Swifey AI as Africa’s voice in AI innovation for Web3.",
+    metrics: ["Thousands of users", "Swifey Women initiative", "Strategic Partnerships"],
     icon: <TrendingUp className="w-8 h-8" />,
-    title: "Token Launch Success",
-    description: "Successfully launched 15+ tokens with sustainable tokenomics and strong market performance",
-    metrics: ["15+ Tokens", "95% Success Rate", "100K+ Holders"],
-    color: "text-green-500"
+    color: "text-green-500",
   },
   {
+    title: "Spectrum – Rise of a Meme Giant",
+    role: "Growth Lead | Ecosystem Strategist",
+    description:
+      "Devised high-impact campaigns, hosted community events, and turned Spectrum into a culture-driven phenomenon.",
+    metrics: ["High-engagement Spaces", "Community-driven coin", "Rapid awareness growth"],
     icon: <Users className="w-8 h-8" />,
-    title: "Community Building",
-    description: "Grew Web3 communities from zero to thousands of active members across multiple platforms",
-    metrics: ["45 Communities", "50K+ Members", "80% Engagement"],
-    color: "text-blue-500"
+    color: "text-blue-500",
   },
   {
+    title: "Spungi ($SPUNGI) – Builder of a Movement",
+    role: "Founder | Developer | Growth Engineer",
+    description:
+      "Deployed secure smart contracts, led branding and narrative, and engineered presale UX/UI to transform $SPUNGI into a Web3 revolution.",
+    metrics: ["Presale success", "Secure contracts", "Community hype"],
+    icon: <Coins className="w-8 h-8" />,
+    color: "text-yellow-500",
+  },
+  {
+    title: "Core DAO – The African Voice of Core",
+    role: "Ecosystem Influencer | Community Ambassador",
+    description:
+      "Educated thousands through tutorials and Spaces, brought mainstream African attention, and became the trusted African voice for Core DAO.",
+    metrics: ["Twitter Spaces education", "Cultural outreach", "Global recognition"],
     icon: <Award className="w-8 h-8" />,
-    title: "Industry Recognition", 
-    description: "Received multiple industry awards and recognition for contributions to Web3 ecosystem",
-    metrics: ["6 Awards", "3 Certifications", "10+ Speaking Events"],
-    color: "text-purple-500"
-  }
+    color: "text-purple-500",
+  },
+  {
+    title: "Acrypt Signal Group & Ambrose Trading Academy",
+    role: "Founder | Lead Analyst | Educator",
+    description:
+      "Mentored 500+ students, built structured trading academies, and delivered financial literacy beyond signals.",
+    metrics: ["500+ students", "Structured rulebooks", "Consistent market signals"],
+    icon: <TrendingUp className="w-8 h-8" />,
+    color: "text-green-500",
+  },
+  {
+    title: "Ikigai & Ikigai AI – DevOps + Culture Builder",
+    role: "Smart Contract Engineer | Ecosystem Strategist",
+    description:
+      "Deployed smart contracts, advised on token strategy, and balanced tech with community narrative for sustained ecosystem growth.",
+    metrics: ["Smart contract deployment", "Token strategy", "Holder confidence"],
+    icon: <Coins className="w-8 h-8" />,
+    color: "text-yellow-500",
+  },
+  {
+    title: "AquaCoin & AlphaCoin – Community-first Airdrop Campaigns",
+    role: "Lead Hype Strategist | Ambassador | Airdrop Director",
+    description:
+      "Engineered content series, structured ambassador programs, and maintained authentic hype across emerging airdrops.",
+    metrics: ["Daily content series", "Ambassador rewards", "Consistent hype"],
+    icon: <Users className="w-8 h-8" />,
+    color: "text-blue-500",
+  },
+  {
+    title: "Sosofi – The Web3 Influence Economy",
+    role: "Founder | Token Visionary | Influence Market Architect",
+    description:
+      "Designed tokenomics and smart contracts, created a social token economy for influencers and content drivers.",
+    metrics: ["Utility token design", "Smart contract implementation", "Influencer rewards system"],
+    icon: <Award className="w-8 h-8" />,
+    color: "text-purple-500",
+  },
 ];
 
 const certifications = [
   "Certified Blockchain Developer",
-  "Solidity Smart Contract Auditor", 
+  "Solidity Smart Contract Auditor",
   "DeFi Protocol Specialist",
   "Web3 Community Manager",
-  "Crypto Trading Professional"
+  "Crypto Trading Professional",
 ];
 
 export default function ProofOfWorkSection() {
@@ -57,31 +101,32 @@ export default function ProofOfWorkSection() {
           </p>
         </div>
 
-        {/* Achievements Grid */}
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-          {achievements.map((achievement, index) => (
-            <Card 
-              key={index} 
+          {projects.map((project, index) => (
+            <Card
+              key={index}
               className="glass-card p-8 group hover:shadow-elegant transition-smooth animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-0">
                 <div className="flex items-start gap-4">
-                  <div className={`${achievement.color} group-hover:scale-110 transition-smooth`}>
-                    {achievement.icon}
+                  <div className={`${project.color} group-hover:scale-110 transition-smooth`}>
+                    {project.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-foreground mb-3">
-                      {achievement.title}
+                    <h3 className="text-2xl font-bold text-foreground mb-1">
+                      {project.title}
                     </h3>
+                    <p className="italic text-sm text-muted-foreground mb-3">{project.role}</p>
                     <p className="text-muted-foreground mb-4 leading-relaxed">
-                      {achievement.description}
+                      {project.description}
                     </p>
                     <div className="flex flex-wrap gap-2">
-                      {achievement.metrics.map((metric, i) => (
-                        <Badge 
-                          key={i} 
-                          variant="secondary" 
+                      {project.metrics.map((metric, i) => (
+                        <Badge
+                          key={i}
+                          variant="secondary"
                           className="bg-primary/10 text-primary hover:bg-primary/20"
                         >
                           {metric}
@@ -100,9 +145,9 @@ export default function ProofOfWorkSection() {
           <h3 className="text-3xl font-bold text-foreground">Certifications & Expertise</h3>
           <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
             {certifications.map((cert, index) => (
-              <Badge 
+              <Badge
                 key={index}
-                variant="outline" 
+                variant="outline"
                 className="px-4 py-2 text-base border-primary/30 hover:border-primary hover:bg-primary/10 transition-smooth animate-fade-in"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
