@@ -5,19 +5,19 @@ const galleryItems = [
   {
     title: "DeFi Innovation",
     description: "Building next-generation decentralized finance solutions with real-world impact.",
-    image: "https://www.ambrose.live/public/inno.jpg",
+    image: "https://ambrose.live/inno.jpg",
     direction: "left"
   },
   {
     title: "Community Empowerment",
     description: "Fostering inclusive communities around technology and blockchain growth.",
-    image: "https://www.ambrose.live/public/comm.jpg",
+    image: "https://ambrose.live/comm.jpg",
     direction: "right"
   },
   {
     title: "Smart Contract Excellence",
     description: "Delivering robust smart contract solutions and strategic growth campaigns.",
-    image: "https://www.ambrose.live/public/smt.jpg",
+    image: "https://ambrose.live/smt.jpg",
     direction: "left"
   },
   {
