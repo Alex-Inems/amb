@@ -183,7 +183,7 @@ through technology and community building.
             <Card className="relative overflow-hidden shadow-elegant group">
               <div className="relative h-96 w-full">
                 <img
-                  src='./public/imgg.jpg'
+                  src='https://ambrose.live/imgg.jpg'
                   alt="Web3 Ambrose Profile"
                   className="w-full h-full object-cover transition-smooth group-hover:scale-105"
                 />
