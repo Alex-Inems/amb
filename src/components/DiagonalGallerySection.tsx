@@ -59,7 +59,7 @@ export default function DiagonalGallerySection() {
         {galleryItems.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 w-full ${
+            className={`flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20 w-full ${
               item.direction === "right" ? "lg:flex-row-reverse" : ""
             }`}
           >
