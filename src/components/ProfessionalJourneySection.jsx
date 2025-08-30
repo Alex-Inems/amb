@@ -121,14 +121,14 @@ export default function ProfessionalJourneySection() {
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* Timeline Node */}
-                <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 -translate-y-2 z-20">
+                {/* <div className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 -translate-y-2 z-20">
                   <div className="relative">
                     <div className="w-16 h-16 bg-gradient-to-r bg-primary rounded-full border-4 border-background shadow-2xl flex items-center justify-center text-primary-foreground">
                       {step.icon}
                     </div>
                     <div className="absolute inset-0 bg-gradient-to-r bg-primary rounded-full animate-pulse-glow opacity-50"></div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Content Card */}
                 <div className={`ml-24 md:ml-0 ${
