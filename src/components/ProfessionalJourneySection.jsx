@@ -9,7 +9,6 @@ const journeySteps = [
     title: "Senior Blockchain Architect",
     company: "Independent Consultant",
     location: "Global Remote",
-    
     description: "Leading blockchain strategy and development for multiple Web3 startups, focusing on DeFi protocols and community-driven ecosystems.",
     achievements: [
       "Architected 5+ DeFi protocols with $12M+ TVL",
@@ -17,14 +16,14 @@ const journeySteps = [
       "Launched successful token projects"
     ],
     skills: ["Solidity", "Rust", "DeFi", "Tokenomics", "Community Building"],
-    color: "from-red-600 to-orange-600"
+    color: "from-red-600 to-orange-600",
+    image: "https://www.ambrose.live/blockchain-architect.jpg"
   },
   {
     year: "2023 - 2024",
     title: "Web3 Growth Strategist",
     company: "Multiple Startups",
     location: "Africa & Global",
-   
     description: "Specialized in scaling Web3 projects from MVP to market fit, with focus on sustainable growth and community engagement.",
     achievements: [
       "Scaled 3 projects to 100K+ users",
@@ -32,14 +31,14 @@ const journeySteps = [
       "Built strategic partnerships globally"
     ],
     skills: ["Growth Strategy", "Partnerships", "Token Design", "Marketing"],
-    color: "from-orange-600 to-red-600"
+    color: "from-orange-600 to-red-600",
+    image: "https://www.ambrose.live/growth-strategist.jpg"
   },
   {
     year: "2022 - 2023",
     title: "Blockchain Developer & Educator",
     company: "Ambrose Trading Academy",
     location: "Nigeria",
-    
     description: "Founded educational platform teaching blockchain development and trading, while building smart contracts for various clients.",
     achievements: [
       "Trained 200+ students in blockchain",
@@ -47,14 +46,14 @@ const journeySteps = [
       "Created comprehensive Web3 curriculum"
     ],
     skills: ["Smart Contracts", "Teaching", "Curriculum Design", "Mentoring"],
-    color: "from-red-700 to-orange-700"
+    color: "from-red-700 to-orange-700",
+    image: "https://www.ambrose.live/blockchain-educator.jpg"
   },
   {
     year: "2021 - 2022",
     title: "Crypto Trader & Analyst",
     company: "Independent",
     location: "Global Markets",
-   
     description: "Full-time cryptocurrency trading and market analysis, developing strategies for both personal portfolio and client funds.",
     achievements: [
       "Achieved 300%+ portfolio returns",
@@ -62,14 +61,14 @@ const journeySteps = [
       "Created market analysis frameworks"
     ],
     skills: ["Technical Analysis", "Trading Systems", "Risk Management", "DeFi"],
-    color: "from-orange-700 to-red-700"
+    color: "from-orange-700 to-red-700",
+    image: "https://www.ambrose.live/crypto-trader.jpg"
   },
   {
     year: "2020 - 2021", 
     title: "Forex Trader",
     company: "Independent",
     location: "Traditional Markets",
-  
     description: "Started trading journey in traditional forex markets, building foundation in financial markets and risk management.",
     achievements: [
       "Developed systematic trading approach",
@@ -77,7 +76,8 @@ const journeySteps = [
       "Transitioned to crypto successfully"
     ],
     skills: ["Forex Trading", "Risk Management", "Market Analysis", "Psychology"],
-    color: "from-red-800 to-orange-800"
+    color: "from-red-800 to-orange-800",
+    image: "https://www.ambrose.live/forex-trader.jpg"
   }
 ];
 
@@ -138,8 +138,16 @@ export default function ProfessionalJourneySection() {
                 } md:w-1/2 group-hover:scale-105 transition-all duration-500`}>
                   
                   <Card className="glass-card p-8 border-l-4 border-primary shadow-elegant hover:shadow-glow transition-all duration-500 relative overflow-hidden">
-                    {/* Card Background Gradient */}
-                    
+                    {/* Image */}
+                    {step.image && (
+                      <div className="mb-6 w-full h-64 relative overflow-hidden rounded-lg">
+                        <img 
+                          src={step.image} 
+                          alt={step.title} 
+                          className="w-full h-full object-cover transition-smooth group-hover:scale-105"
+                        />
+                      </div>
+                    )}
                     
                     <CardContent className="p-0 relative z-10">
                       {/* Header */}
