@@ -23,19 +23,19 @@ const galleryItems = [
   {
     title: "Ecosystem Building",
     description: "Scaling user bases and building sustainable, measurable growth in Web3.",
-    image: "https://images.unsplash.com/photo-1581091215366-7b67a0c8d110?auto=format&fit=crop&w=1200&q=80",
+    image: "https://ambrose.live/eco.jpg",
     direction: "right"
   },
   {
     title: "Global Recognition",
     description: "Partnering with top international voices to amplify impactful projects.",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+    image: "https://ambrose.live/recog.jpg",
     direction: "left"
   },
   {
     title: "Web3 Events & Spaces",
     description: "Hosting high-demand sessions for startups, showcasing value and expertise.",
-    image: "https://images.unsplash.com/photo-1601597119630-02b82f60e3d0?auto=format&fit=crop&w=1200&q=80",
+    image: "https://ambrose.live/event.jpg",
     direction: "right"
   }
 ];
