@@ -12,11 +12,11 @@ interface LinkPreview {
 }
 
 const links: LinkPreview[] = [
-  { url: "https://t.me/+DWQprC01D6hhYjg8", title: "Telegram Group", description: "Join my Telegram group for Web3 projects" },
-  { url: "http://t.me/Ambroseweb3", title: "Telegram Chat", description: "Connect with me directly on Telegram" },
+  { url: "https://t.me/+DWQprC01D6hhYjg8", title: "Proof of Work", description: "Join my Telegram group for Web3 projects" },
+  { url: "http://t.me/Ambroseweb3", title: "Let's Connect", description: "Connect with me directly on Telegram" },
   { url: "https://www.linkedin.com/in/web3-ambrose-0053a922a/?originalSubdomain=ng", title: "LinkedIn", description: "Check out project resources and links" },
   { url: "https://t.me/Ambrosealpha", title: "Resources", description: "Explore more project links" },
-  { url: "https://linktr.ee/Web3Ambrose", title: "Linktr.ee", description: "All my Web3 links in one place" },
+  { url: "https://linktr.ee/Web3Ambrose", title: "More about Me", description: "All my Web3 links in one place" },
 ];
 
 export default function HeroSection() {
