@@ -42,15 +42,15 @@ const galleryItems = [
 
 export default function DiagonalGallerySection() {
   return (
-    <section className="py-24 px-6 lg:px-20 bg-background relative overflow-visible">
-      <div className="relative z-10 max-w-7xl mx-auto space-y-32">
+    <section className="py-20 px-6 lg:px-20 bg-background relative overflow-visible">
+      <div className="relative z-10 max-w-7xl mx-auto space-y-16 md:space-y-24 lg:space-y-32">
         {/* Section Header */}
-        <div className="text-center space-y-4 mb-24">
-          <h2 className="text-5xl md:text-6xl font-extrabold text-foreground leading-tight">
+        <div className="text-center space-y-4 mb-16 md:mb-24">
+          <h2 className="text-4xl md:text-6xl font-extrabold text-foreground leading-tight">
             Innovation in Action
           </h2>
           <div className="w-28 h-1 gradient-primary rounded-full mx-auto"></div>
-          <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto">
             Driving the intersection of technology, community, and measurable impact.
           </p>
         </div>
@@ -59,18 +59,18 @@ export default function DiagonalGallerySection() {
         {galleryItems.map((item, index) => (
           <div
             key={index}
-            className={`flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20 w-full ${
+            className={`flex flex-col-reverse lg:flex-row items-center gap-8 md:gap-12 lg:gap-20 w-full ${
               item.direction === "right" ? "lg:flex-row-reverse" : ""
             }`}
           >
             {/* Image */}
-            <div className="flex-1 min-h-[400px]">
-              <Card className="shadow-xl rounded-xl overflow-hidden group h-full">
+            <div className="flex-1 min-h-[280px] md:min-h-[400px]">
+              <Card className="shadow-xl rounded-2xl overflow-hidden group h-full">
                 <div className="relative h-full w-full">
                   <img
                     src={item.image}
                     alt={item.title}
-                    className="w-full h-full object-cover rounded-xl transition-transform duration-500 ease-in-out group-hover:scale-105"
+                    className="w-full h-full object-cover rounded-2xl transition-transform duration-500 ease-in-out group-hover:scale-105"
                     onError={(e) => {
                       (e.target as HTMLImageElement).src =
                         "https://via.placeholder.com/800x400?text=Image+Not+Found";
@@ -81,10 +81,12 @@ export default function DiagonalGallerySection() {
             </div>
 
             {/* Content */}
-            <div className="flex-1 space-y-6">
-              <h3 className="text-3xl md:text-4xl font-bold text-foreground">{item.title}</h3>
+            <div className="flex-1 space-y-4 md:space-y-6">
+              <h3 className="text-2xl md:text-4xl font-bold text-foreground">{item.title}</h3>
               <div className="w-16 h-1 gradient-primary rounded-full"></div>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">{item.description}</p>
+              <p className="text-base md:text-xl text-muted-foreground leading-relaxed">
+                {item.description}
+              </p>
             </div>
           </div>
         ))}
